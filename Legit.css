@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    font-size: 25px;
+    --underline: rgb(226, 40, 87);
+  
+}
+
+.landing{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 120vh;
+    
+    border-bottom: 1px solid whitesmoke;
+   
+}
+.landing img{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    height: 100vh;
+    
+   
+   
+}
+.landing .caseTitle h1{
+    top:50%;
+    left: 20%;
+    position: absolute;
+    font-size: 95px;
+    filter: drop-shadow(1px 1px 15px black);
+    
+    
+}
+
+.overview{
+    height: 100vh;
+    width: 100%;
+
+}
+.overview nav .index{
+    height: 10vh;
+    display: flex;
+   
+    
+}
+.overview .nav-links{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+    
+}
+.overview .nav-links li{
+    margin-left: 20px;
+}
+.overviewSection{
+    
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid white;
+    
+}
+.column{
+    float: left;
+}
+.left {
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.left h1,.left p{
+    margin-left: 50px;
+}
+
+.left img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.right{
+    
+    width: 50%;
+    margin: auto;
+    
+}
+
+.right h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right p{
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 50px;
+}
+
+.introduction{
+    width: 100%;
+    height: 60vh;
+    padding-bottom: 40px;
+    
+}
+.intro{
+    
+    height: 140vh;
+    
+}
+.introduction .left, .introduction .right{
+    width: 50%;
+}
+.tools{
+    width: 100%;
+    height: 80vh;
+    float: left;
+    border-bottom: 1px solid white;
+    
+}
+.tools h1, .design h1, .design h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding: 15px;
+    height: 10vh;
+}
+#whatsapp img, #figma img{
+    width: 35%;
+    height: 50%;
+    
+}
+#figma img{
+    margin-left: auto;
+    margin-right: auto;
+}
+#figma p, #whatsapp p{
+    margin-top: 20px;
+    margin-left: 20%;
+    width: 70%;
+}
+.tools #whatsapp, .tools #figma{
+    width: 50%;
+    height: 70vh;
+    
+}
+
+.design{
+    
+    width: 100%;
+    height: 150vh;
+    float: left;
+    border-bottom: 1px solid white;
+    
+    
+}
+.design h1, .design h2{
+    margin-top: 10px;
+}
+.design p{
+    width: 95%;
+    margin-left: auto;
+    margin-top: auto;
+}
+.design .left img, .design .right img{
+    margin-left: 50px;
+    margin-top: 35px;
+    width: 60%;
+    height: 60%;
+}
+.design .left p, .design .right p{
+    width: 60%;
+    margin-left: 5%;
+    
+}
+
+#legitInsta{
+    height: 80%;
+}
+
+#questions{
+    
+    background: black;
+}
+#questions h2{
+    margin-top: 210px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.userResearch{
+    height:150vh;
+    border-bottom:1px solid white;
+}
+.userResearch h1, .userResearch h2, .problem h1, .iteration h1,
+.secondIteration h1, .testing h1, .next h1{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userResearch p, .problem p, .next p{
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+}
+#Screenshots{
+    height: 100vh;
+
+}
+#Screenshots img{
+    width: 50%;
+    height: 40%;
+    margin-top: 50px;
+
+}
+
+.problem{
+    height: 100vh;
+    border-bottom: 1px solid white;
+}
+.problem p,.problem h1{
+    padding: 55px;
+    
+}
+#solution{
+    
+    height: 550vh;
+    width: 100%;
+    border-bottom: 1px solid white;
+    
+}
+.tri-column{
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.tri-column img{
+    width: 10%;
+    height: 15%;
+    
+}
+.tri-column p{
+    font-size: smaller;
+    width: 20%;
+    padding: 0px;
+}
+.wireframe{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.wireframe img{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.iteration{
+    
+    width: 100%;
+    padding: 100px;
+}
+.iteration img{
+    width: 90%;
+    height: 70%;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.secondIteration{
+    position: relative;
+    padding: 10px;
+}
+iframe{
+    width: 50%;
+    top: 50%;
+    margin-left: 25%;
+ 
+   
+}
+.next{
+    width: 100%;
+    height: 80vh;
+
+}
+.next p{
+    margin-top: 10%;
+}
+.footer{
+    height: 10vh;
+    display: flex;
+    
+}
+.page-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    
+    
+    
+}
+
+.page-links li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+    padding-left: 500px;
+    
+    
+}
+#logoframe{
+    width: 50%;
+    left: 25%;
+    
+}
+#logoTitle h1{
+    left: 15%;
+    top: 60%;
+ color: whitesmoke;
+}
+
+

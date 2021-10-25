@@ -13,7 +13,7 @@ hamburger.addEventListener("click", ()=>{
 });
 
 //typewriter
-const titles = ["AM A STUDENT","AM A CREATIVE" ,"AM A WEB DESIGNER/DEVELOPER", "MAKE GAMES SOMETIMES", "DRAW/ILLUSTRATE"];
+const titles = ["AM A STUDENT.","AM A CREATIVE." ,"AM A WEB DESIGNER/DEVELOPER.", "MAKE GAMES SOMETIMES.", "DRAW/ILLUSTRATE."];
 
 let i = 0;
 let counter;
@@ -57,3 +57,7 @@ function deleteTitle(){
 };
 
 typing();
+
+   
+    
+  

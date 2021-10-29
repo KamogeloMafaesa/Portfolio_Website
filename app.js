@@ -7,10 +7,29 @@ const links = document.querySelectorAll('.nav-links li');
 hamburger.addEventListener("click", ()=>{
     
     navLinks.classList.toggle("open");
+    
     links.forEach(link=>{
         link.classList.toggle("fade");
+          
     });
 });
+
+
+
+hamburger.addEventListener("touch", ()=>{
+    
+    navLinks.classList.toggle("open");
+    
+    links.forEach(link=>{
+        link.classList.toggle("fade");
+          
+    });
+});
+
+
+
+
+
 
 //typewriter
 const titles = ["AM A STUDENT.","AM A CREATIVE." ,"AM A WEB DESIGNER/DEVELOPER.", "MAKE GAMES SOMETIMES.", "DRAW/ILLUSTRATE."];

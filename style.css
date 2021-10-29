@@ -1,6 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
+  
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -202,15 +204,26 @@ nav{
 
  .contactPage{
    width: 100%;
-   height: 100vh;
+   height: 90vh;
+   
   
  }
- .contactPage h1{
-   width: 50%;
-   top: 50%;
-   margin-left: auto;
-   margin-right: auto;
-   padding: 15px;
+ .contactPage .icons {
+ margin-left: 45%;
+ padding: 50px;
+
+ }
+ .icons img{
+   max-width: 25%;
+   max-height: 25%;
+   margin-top: 5%;
+ }
+ .email{
+   display: flex;
+ }
+ .email p{
+   margin-left: 2%;
+   margin-top: 6%;
  }
 .projectcard{
   margin-top: 100px;
@@ -336,6 +349,13 @@ nav{
   background-size: 100% 80%;
   
 }
+#cssAnimations{
+  
+  background-image: url(CSS\ animations\ .png);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  
+}
 .caseStudy{
   width: 100%;
   height: 90vh;
@@ -354,20 +374,76 @@ nav{
   background-image: url(LegitRedesign_Iteration2\ -\ Figma\ 2021_09_06\ 12_21_29\ \(2\).png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  filter: grayscale(100%);
 }
+
+#legitCaseStudy:hover{
+  background-image: url(LegitRedesign_Iteration2\ -\ Figma\ 2021_09_06\ 12_21_29\ \(2\).png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: none;
+  transition: 0.75s all ease-in;
+}
+
+
 #logoCaseStudy{
   background-image: url(LogoDesign\ -\ Figma\ .png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  filter: grayscale(100%);
 }
+
+
+#logoCaseStudy:hover{
+  background-image: url(LogoDesign\ -\ Figma\ .png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: none;
+  transition: 0.75s all ease-in;
+}
+
+
 #drawingCaseStudy{
   background-image: url(ryan-code.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  filter: grayscale(100%);
+}
+
+#drawingCaseStudy:hover{
+  background-image: url(ryan-code.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: none;
+  transition: 0.75s all ease-in;
+}
+.ryanOutline{
+  margin-left: 8%;
+  width: 80%;
+  height: 100vh;
+  margin-top: 20px;
+  margin-bottom: 20PX;
+ 
+}
+#ryanOutline{
+  background-image: url(Ryan\ Destiny\ -\ Google\ Chrome\ 2021_10_26\ 21_17_35.png);
+  background-size: cover;
+}
+#triangle{
+  background-image: url(index.html\ -\ examples\ -\ Visual\ Studio\ Code\ 2021_10_26\ 21_45_37.png);
+  background-size: cover;
+}
+#FinalRyan{
+  background-image: url(ryan.png);
+  background-size: (100% 100%);
+  background-repeat: no-repeat;
 }
 
 
- @media screen and (max-width: 768px){
+ @media only screen and (max-width: 768px){
+  body{
+    font-size: 1em;
+  }
   nav{
     position: relative;
     height:10vh;
@@ -384,29 +460,34 @@ nav{
     top: 5%;
     transform: translate(-5%, -50%);
     cursor: pointer;
-    z-index: 2;
+    z-index: 5;
   }
   .nav-links{
     position: fixed;
     height:100vh;
     width: 100%;
+    top: 0;
     flex-direction: column;
     clip-path: circle(100px at 90% -5%);
     -webkit-clip-path: circle(100px at 90% -5%);
     pointer-events: none;
     background:rgb(26, 25, 25);
     transition: all 1s ease-out 0s;
+    z-index: 4;
+    
   }
   .nav-links.open{
-    clip-path: circle(1000px at 90% -5%);
-    -webkit-clip-path: circle(1000px at 90% -5%);
+    clip-path: circle(1000px at 90% 5%);
+    -webkit-clip-path: circle(1000px at 90% 5%);
     pointer-events: all;
+    z-index: 4;
+    
   }
   .nav-links li{
     opacity: 0;
   }
   .nav-links li a{
-    font: 16px;
+    font: 14px;
   }
 
   .nav-links li:nth-child(1){
@@ -424,20 +505,250 @@ nav{
   li.fade{
     opacity:1;
   }
-  .row{
-    flex-direction: column;
-    height: 90vh;
+  .Home .row{
+    width: 100%;
+    display: flex;
+    
   }
-  .column .right img{
-    width: 200px;
-    height: 100px;
+ 
+ .Home .left{
+   
+    width: 50%;
+    height:100%;
+    font-size: 1.5rem;
+    
   }
+  .Home h1{
+    font-size: 2.5em;
+    margin-left: 50px;
+
+  }
+ .left .intro {
+    font-size: 30px;
+    margin-left: 3px;
+  }
+  #typewriter{
+
+    margin-left: 5px;
+    text-overflow:inherit;
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+ 
+  .Home .right{
+    width: 50%;
+    height: 100%;
+    
+  }
+  
+  .Home img{
+    max-width: 80%;
+    max-height: 80%;
+    
+  }
+  .about{
+    position: relative;
+    z-index: -2;
+  }
+  
   #aboutContent{
     flex-direction: row;
     height: 100vh;
+    
   }
   .image img{
-    width: 50%;
-    height: 25%;
+    width: 90%;
+    height: 90%;
+  }
+  .info p{
+    margin-left: 30px;
+    font-size: 18px;
+  }
+  .projectcard, .caseStudy{
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+    
+  }
+  
+  .projectcard h1, .caseStudy h1{
+    
+    margin-left:10%;
+  }
+  .projectcard h1{
+    min-width: 100%;
+  }
+
+  .firstrow{
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+  #gallery{
+    margin-top: 200px;
+    
+  }
+  .drawings{
+    max-width: 100%;
+    margin-top: -100px;
+    margin-bottom: -150px;
+    background: transparent;
+  }
+  .drawings img{
+    max-width: 100%;
+    max-height: 50%;
+
+  }
+  .cssdrawing{
+    margin-left: 10%;
+    max-width: 80%;
+    max-height: 80%;
+  }
+  .cssdrawing iframe{
+    max-height: 50%;
+    
+  }
+  #DevEd{
+    margin-top: -500px;
+    max-width: 80%;
+    max-height: 30%;
+  }
+  #InteractiveMedia, #cssAnimations{
+    max-width: 80%;
+    max-height: 30%;
+    margin-top: -100px;
+
+  }
+  .caseStudy h1{
+    margin-top: 20%;
+  }
+  #legitCaseStudy h1{
+    margin-left: 20%;
+  }
+.landing img{
+ min-width: 100%;
+ max-height: 100%;
+ margin-left: -15%;
+ 
+}
+.landing h1{
+  margin-left: -110px;
+  
+}
+.caseTitle h1{
+  font-size: 50%;
+}
+.overview{
+  max-width: 100%;
+}
+.index .nav-links{
+  max-width: 100%;
+}
+.scrollUp{
+  display: none;
+}
+
+.contactPage{
+  max-width: 100%;
+  height: 100%;
+  
+ 
+}
+.contactPage .icons {
+margin-left: 20%;
+padding: 50px;
+
+}
+.icons img{
+  max-width: 60%;
+  max-height: 60%;
+  margin-top: 5%;
+}
+.email{
+  display: flex;
+}
+.email p{
+  margin-left: 2%;
+  margin-top: 8%;
+}
+  
+}
+@media only screen and (max-width:600px){
+  body{
+    font-size: 1rem;
+  }
+  h1{
+    font-size: 1.2rem;
+  }
+  h2{
+    font-size: 1.0rem;
+  }
+  .caseTitle h1{
+    min-width: 100%;
+    margin-left: -15%;
+   
+  }
+  .logoTitle h1{
+    margin-left: -15%;
+    min-width: 100%;
+    margin-top: -20%;
+    
+ 
+  }
+  .landing img{
+    min-width: 100%;
+    min-height: 50%;
+  }
+  #logoTitle{
+    font-size: 1.;
+    
+  }
+
+  #ryanOutline, #FinalRyan{
+    max-width: 100%;
+    max-height: 50%;
+ margin-left: -10%;
+ background-size: 100% 100%;
+  }
+  .info p{
+    padding-bottom: 20px;
+  }
+  .overview .left img{
+    margin-left: -10%;
+    min-width: 100%;
+    max-height: 100%;
+  }
+  .overview .right p{
+    margin-left: 15%;
+  }
+  #intro h1{
+    font-size: 1.2rem;
+    margin-left: 10%;
+  }
+  .tools h1{
+    margin-top: 50px;
+
+  }
+  img{
+    max-height: 100%;
+    max-width: 100%;
+  }
+  #ux img{
+    min-width: 80%;
+    max-height: 50%;
+  }
+  .overviewSection .right{
+    margin-left: -15%;
+
+  }
+  .tri-column img{
+    min-width: 15%;
+  }
+  .tri-column p{
+    padding-left: 10px;
+  }
+  .iteration img{
+    min-width: 130%;
+    max-height: 100%;
   }
 }

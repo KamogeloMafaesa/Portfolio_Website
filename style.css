@@ -32,6 +32,7 @@ nav{
   margin-top:10px;
   margin-left:30px;
   filter: drop-shadow(2px 2px 2px rgb(66, 66, 66));
+  cursor: pointer;
  
 }
 .nav-links{
@@ -722,7 +723,7 @@ padding: 50px;
     margin-left: 15%;
   }
   #intro h1{
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-left: 10%;
   }
   .tools h1{

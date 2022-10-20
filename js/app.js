@@ -32,7 +32,7 @@ hamburger.addEventListener("touch", ()=>{
 
 
 //typewriter
-const titles = ["AM A STUDENT.","AM A CREATIVE." ,"AM A WEB DESIGNER/DEVELOPER.", "MAKE GAMES SOMETIMES.", "DRAW/ILLUSTRATE."];
+const titles = ["A DIGITAL ARTIST." ,"A WEB DEVELOPER.","A GAME DESIGNER.", "A CREATIVE."];
 
 let i = 0;
 let counter;

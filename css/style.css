@@ -1,0 +1,520 @@
+*, 
+*::before,
+*::after{
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background: black;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 25px;
+  --typewriter:red;
+
+}
+h1, h2{
+  font-family: 'Poppins', sans-serif;
+
+}
+/*First Page Styles*/
+nav{
+  display: flex;
+  height: 10vh;
+  padding-top: 1rem;
+
+  
+}
+.logo{
+  width: 5.2rem;
+  height: 5.2rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  filter: drop-shadow(2px 2px 2px rgb(66, 66, 66));
+  cursor: pointer;
+ 
+ 
+}
+
+.nav-links{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: auto;
+  list-style: none;
+}
+/* .nav-links li a{
+  text-decoration: none;
+  color:white;
+  font-size: 2.5rem;
+  
+  background-position: 100%;
+  transition: background-position .5s ease;
+} */
+.nav-links li a:hover{
+ 
+  transition: 2s ease-out;
+  transform: scaleX(100%);
+  transform-origin: left;
+  box-shadow: inset 400px 0 0 0 red;
+  
+}
+.nav-links li a{
+  color: #FFF;
+  text-decoration: none;
+  /* border: 2px solid rgb(216, 2, 134); */
+  border-radius: 0px;
+  padding: 18px 30px;
+  display: inline-block;
+  font-size: 2.5rem;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 red;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+
+.row{
+  display:flex;
+  width: 100%;
+  height: 88vh;
+  
+  
+}
+.column{
+  float: left;
+  
+  
+  
+}
+.left{
+  width:60%;
+  
+
+  
+}
+.right{
+  width: 40%;
+  
+  
+}
+.left h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 8rem;
+  margin-top: 20rem;
+  margin-left:30rem;
+  
+ 
+}
+#Hello h1{
+  color: black;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width:.1rem;
+ 
+  
+}
+.left .intro{
+  font-family: 'Poppins', sans-serif;
+  font-size: 5rem;
+  margin-top:.5rem;
+  margin-left: 20rem;
+}
+#typewriter{
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  margin-top: 3rem;
+  margin-left: 25rem;
+  color: var(--typewriter);
+  
+  
+}
+
+#homeImg img{
+  width: 80%;
+  height:80%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 13.2rem;
+  margin-left: auto;
+  
+ 
+}
+
+#intro h1{
+  font-size: 50px;
+}
+#typewriter{
+  
+  width: auto;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: .15em;
+  border-right: .15em solid white;
+  animation: typing 4.5s steps(40,end),
+            caret .80s step-end infinite;
+  
+}
+.fa{
+  width: 52px;
+  height: 52px;
+  color: white;
+}
+
+@keyframes typing{
+  from{max-width: 0}
+  to{max-width: 100%}
+}
+@keyframes caret{
+  from,to{border-color: transparent;}
+  50%{border-color: white;}
+} 
+
+
+
+
+
+
+
+
+
+
+
+/*About Page Styles*/
+.about{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+#aboutContent{
+  display: flex;
+  
+}
+.aboutTitle{
+  
+  border-bottom: 1px solid white;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 50px;
+  font-size: 60px;
+  color: black;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+/* .aboutTitle{
+  
+  border-bottom: 2px solid red;
+  margin-top: 15px;
+  color: black;
+  -webkit-text-stroke-color: black;
+  width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(2px 2px 1px solid white);
+  
+} */
+.about .image{
+  padding-top: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 50px;
+
+}
+.about .info {
+  
+  width: 50%;
+  font-size: 25px;
+ /* padding-top: 25px;*/
+  
+}
+.info{
+  padding: 30px;
+}
+
+.info p{
+  padding-top:20px;
+  width: 90%;
+  
+}
+ .about img{
+   /* filter: grayscale(560%); */
+   width: 70%;
+   height:100%; 
+ }
+
+
+ /*contact Page*/
+
+ .contactPage{
+   width: 100%;
+   height: 90vh;
+   
+  
+ }
+ .contactPage .icons {
+ margin-left: 45%;
+ padding: 50px;
+
+ }
+ .icons img{
+   max-width: 25%;
+   max-height: 25%;
+   margin-top: 5%;
+ }
+ .email{
+   display: flex;
+ }
+ .email p{
+   margin-left: 2%;
+   margin-top: 6%;
+ }
+.projectcard{
+  margin-top: 100px;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+/*Illustrations card*/
+
+.firstrow{
+  position: relative;
+  width: 100%;
+  display: flex;
+  
+}
+
+#gallery{
+  padding-top: 50px;
+  
+}
+.drawings{
+  width: 25%;
+  height: auto;
+  background: red;
+}
+
+.firstrow img{
+  width: 100%;
+  height: 100%;
+}
+
+.projectcard a, .caseStudy a{
+  text-decoration: none;
+  color: white;
+  font-size: 70px;
+  filter: drop-shadow(1px 1px 15px black);
+  
+}
+#illustrations{
+  background-image: url(../Images/illustrations\ group\ img.png);
+  
+}
+#cssdrawings{
+  background-image: url(../Images/drawings\ group.png);
+}
+#designprojects{
+  background-image: url(../Images/Design\ group.png);
+  margin-bottom: 100px;
+}
+#illustrations:hover{
+  background-image: url(../Images/illustrations\ group.png);
+  transition: all 0.5s ease-in;
+}
+#cssdrawings:hover{
+  background-image: url(../Images/drawings.png);
+  transition: all 0.5s ease-in;
+}
+#designprojects:hover{
+  background-image: url(../Images/Design.png);
+  transition: all 0.5s ease-in;
+}
+.cssdrawing{
+  width: 100%;
+  height: 150vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.cssdrawing a p{
+  text-decoration: none;
+  color: white;
+}
+.cssdrawing  p{
+  
+  margin-bottom: 180px;
+  margin-top: auto;
+
+}
+.cssdrawing iframe{
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+}
+#giphy{
+  height: 100vh;
+  background-image: url(../Images/giphy_imageResized.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#giphy:hover{
+  background-image: url(../Images/giphy.gif);
+}
+#stewie{
+  
+  background-image: url(../Images/stewie.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#sunset{
+  
+  background-image: url(../Images/sunset.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#ryan{
+  height: 150vh;
+  background-image: url(../Images/ryan.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#DevEd{
+  
+  background-image: url(../Images/DevEd\ figma\ tutorial.png);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+}
+#InteractiveMedia{
+  
+  background-image: url(../Images/InteractiveMedia.png);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  
+}
+#cssAnimations{
+  
+  background-image: url(../Images/CSS\ animations\ .png);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  
+}
+
+#graphicDesign{
+  background-image: url(../Images/self-portrait-1.png);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: 50% 80%;
+}
+.caseStudy{
+  width: 100%;
+  height: 90vh;
+  background: red;
+  border: 1px solid white;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.caseStudy a{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20%;
+}
+#legitCaseStudy{
+  background-image: url(../Images/LegitRedesign_Iteration2\ -\ Figma\ 2021_09_06\ 12_21_29\ \(2\).png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: grayscale(100%);
+}
+
+#legitCaseStudy:hover{
+  background-image: url(../Images/LegitRedesign_Iteration2\ -\ Figma\ 2021_09_06\ 12_21_29\ \(2\).png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: none;
+  transition: 0.75s all ease-in;
+}
+
+
+#logoCaseStudy{
+  background-image: url(../Images/LogoDesign\ -\ Figma\ .png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: grayscale(100%);
+}
+
+
+#logoCaseStudy:hover{
+  background-image: url(../Images/LogoDesign\ -\ Figma\ .png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: none;
+  transition: 0.75s all ease-in;
+}
+
+
+#drawingCaseStudy{
+  background-image: url(../Images/ryan-code.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: grayscale(100%);
+}
+
+#drawingCaseStudy:hover{
+  background-image: url(../Images/ryan-code.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: none;
+  transition: 0.75s all ease-in;
+}
+.ryanOutline{
+  margin-left: 8%;
+  width: 80%;
+  height: 100vh;
+  margin-top: 20px;
+  margin-bottom: 20PX;
+ 
+}
+#ryanOutline{
+  background-image: url(../Images/Ryan\ Destiny\ -\ Google\ Chrome\ 2021_10_26\ 21_17_35.png);
+  background-size: cover;
+}
+#triangle{
+  background-image: url(../Images/index.html\ -\ examples\ -\ Visual\ Studio\ Code\ 2021_10_26\ 21_45_37.png);
+  background-size: cover;
+}
+#FinalRyan{
+  background-image: url(../Images/ryan.png);
+  background-size: (100% 100%);
+  background-repeat: no-repeat;
+}
+

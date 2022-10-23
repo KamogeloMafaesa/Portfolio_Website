@@ -204,6 +204,10 @@ body{
     height: 80%;
 }
 
+#legitInsta .comment{
+    margin-top: 0 !important;
+}
+
 #questions{
     
     background: black;

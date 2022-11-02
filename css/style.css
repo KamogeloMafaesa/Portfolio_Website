@@ -385,7 +385,7 @@ nav{
   background-image: url(../Images/Design.png);
   transition: all 0.5s ease-in;
 }
-.cssdrawing{
+.cssdrawing, .webdev{
   width: 100%;
   height: 150vh;
   margin-top: 50px;
@@ -398,16 +398,17 @@ nav{
   text-decoration: none;
   color: white;
 }
-.cssdrawing  p{
+.cssdrawing  p, .webdev p{
   
   margin-bottom: 180px;
   margin-top: auto;
 
 }
-.cssdrawing iframe{
+.webdev iframe{
   width: 100%;
   height: 100%;
   margin-left: 0px;
+  display: flex;
 }
 #giphy{
   height: 100vh;
@@ -436,7 +437,7 @@ nav{
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-#DevEd{
+#DevEd, #DevEdWeb{
   
   background-image: url(../Images/DevEd\ figma\ tutorial.png);
   background-repeat: no-repeat;
@@ -546,3 +547,34 @@ nav{
   background-repeat: no-repeat;
 }
 
+#VansSneaker{
+  background-image: url(../Images/Vans_Sneaker_A.png);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+}
+#NikeSneaker{
+  background-image: url(../Images/Nike_Anim.png);
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+
+#BtnAnim{
+  background-image: url(../Images/Button\ Animation\ .png);
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+
+.webDesign, .CSS{
+  margin: 10rem;
+}
+.webDesign p{
+  font-weight: bolder;
+}
+.webDesign a{
+  color: rgb(238, 161, 161);
+  padding: 10px 10px;
+}
+.webDesign a:hover{
+  color: red;
+  filter: brightness(100%);
+}

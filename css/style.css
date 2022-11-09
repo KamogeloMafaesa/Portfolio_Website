@@ -578,3 +578,9 @@ nav{
   color: red;
   filter: brightness(100%);
 }
+
+#DevEdWeb p,
+ #VansSneaker p{
+
+  margin-bottom: 15rem;
+ }

@@ -576,6 +576,11 @@ nav{
   background-repeat: no-repeat;
   background-size: 100% 70%;
 }
+#Menu-Ani{
+  background-image: url(../Images/Menu\ Animation\ -\ Google\ Chrome\ 2023-06-28\ 05-55-21.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+}
 
 .webDesign, .CSS{
   margin: 10rem;

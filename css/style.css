@@ -380,6 +380,10 @@ nav{
   filter: grayscale(100%);
   background-image: url(../Images/blender_banner.png);
 }
+#games_banner{
+  filter: grayscale(100%);
+  background-image: url(../Images/game_banner.png);
+}
 
 #illustrations:hover{
   filter: none;
@@ -394,6 +398,10 @@ nav{
   transition: all 0.5s ease-in;
 }
 #blender_banner:hover{
+  filter: none;
+  transition: all 0.5s ease-in;
+}
+#games_banner:hover{
   filter: none;
   transition: all 0.5s ease-in;
 }
@@ -583,13 +591,17 @@ nav{
 }
 #MouseFollow{
 
+  background-image: url(../Images/Mouse-Follow-Google-Chrome-2023.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+
 }
 #MouseTrail{
-
+  background-image: url(../Images/MouseTrail-Google-Chrome-2023-06.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
 }
-#Hover-Effect{
 
-}
 
 .webDesign, .CSS{
   margin: 10rem;

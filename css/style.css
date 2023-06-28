@@ -579,7 +579,16 @@ nav{
 #Menu-Ani{
   background-image: url(../Images/Menu\ Animation\ -\ Google\ Chrome\ 2023-06-28\ 05-55-21.gif);
   background-repeat: no-repeat;
-  background-size: 100% 80%;
+  background-size: 100% 70%;
+}
+#MouseFollow{
+
+}
+#MouseTrail{
+
+}
+#Hover-Effect{
+
 }
 
 .webDesign, .CSS{

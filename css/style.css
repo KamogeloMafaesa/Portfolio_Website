@@ -320,8 +320,8 @@ nav{
    margin-top: 6%;
  }
 .projectcard{
-  margin-top: 100px;
-  width: 100%;
+  margin-top: 10rem;
+  width: 100vw;
   height: 70vh;
   position: relative;
   display: flex;
@@ -358,33 +358,46 @@ nav{
 .projectcard a, .caseStudy a{
   text-decoration: none;
   color: white;
-  font-size: 70px;
+  font-size: 4vw;
   filter: drop-shadow(1px 1px 15px black);
   
 }
 #illustrations{
-  background-image: url(../Images/illustrations\ group\ img.png);
-  
-}
-#cssdrawings{
-  background-image: url(../Images/drawings\ group.png);
-}
-#designprojects{
-  background-image: url(../Images/Design\ group.png);
+  filter: grayscale(100%);
+  background-image: url(../Images/illustrations\ group.png);
   margin-bottom: 100px;
 }
+#cssdrawings{
+  filter: grayscale(100%);
+  background-image: url(../Images/drawings.png);
+}
+#designprojects{
+  filter: grayscale();
+  background-image: url(../Images/Design.png);
+  
+}
+#blender_banner{
+  filter: grayscale(100%);
+  background-image: url(../Images/blender_banner.png);
+}
+
 #illustrations:hover{
-  background-image: url(../Images/illustrations\ group.png);
+  filter: none;
   transition: all 0.5s ease-in;
 }
 #cssdrawings:hover{
-  background-image: url(../Images/drawings.png);
+  filter: none;
   transition: all 0.5s ease-in;
 }
 #designprojects:hover{
-  background-image: url(../Images/Design.png);
+  filter: none;
   transition: all 0.5s ease-in;
 }
+#blender_banner:hover{
+  filter: none;
+  transition: all 0.5s ease-in;
+}
+
 .cssdrawing, .webdev{
   width: 100%;
   height: 150vh;
@@ -583,4 +596,13 @@ nav{
  #VansSneaker p{
 
   margin-bottom: 15rem;
+ }
+
+ .youtube iframe{
+
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10rem;
+  
  }

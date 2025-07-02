@@ -25,66 +25,6 @@ h1, h2{
 
 }
 /*First Page Styles*/
-nav{
-  display: flex;
-  height: 10vh;
-  padding-top: 1rem;
-
-  
-}
-.logo{
-  width: 5.2rem;
-  height: 5.2rem;
-  margin-top: 1rem;
-  margin-left: 3rem;
-  filter: drop-shadow(2px 2px 2px rgb(66, 66, 66));
-  cursor: pointer;
- 
- 
-}
-
-.nav-links{
-  display: flex;
-  width: 50%;
-  height: 100%;
-  align-items: center;
-  justify-content: space-around;
-  margin-left: auto;
-  list-style: none;
-}
-/* .nav-links li a{
-  text-decoration: none;
-  color:white;
-  font-size: 2.5rem;
-  
-  background-position: 100%;
-  transition: background-position .5s ease;
-} */
-.nav-links li a:hover, .addresses a:hover{
- 
-  transition: 2s ease-out;
-  transform: scaleX(100%);
-  transform-origin: left;
-  box-shadow: inset 400px 0 0 0 red;
-  
-}
-.nav-links li a{
-  color: #FFF;
-  text-decoration: none;
-  /* border: 2px solid rgb(216, 2, 134); */
-  border-radius: 0px;
-  padding: 18px 30px;
-  display: inline-block;
-  font-size: 2.5rem;
-  letter-spacing: .1rem;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 red;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
-}
-
-
 .row{
   display:flex;
   width: 100%;
@@ -139,6 +79,7 @@ nav{
   color: var(--typewriter);
   
   
+  
 }
 
 #homeImg img{
@@ -176,7 +117,7 @@ nav{
 }
 @keyframes caret{
   from,to{border-color: transparent;}
-  50%{border-color: white;}
+  50%{border-color: var(--typewriter);}
 } 
 
 

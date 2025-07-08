@@ -1,5 +1,34 @@
-//fetch navbar and inject it to every html page
+//fetch footer and inject it to every page
+function GetFooter(){
+    fetch('../components/footer.html')
+    .then(response => {
+        return response.text();
+    })
 
+    .then(function(html){
+        const parser = new DOMParser();
+        const footerPage = parser.parseFromString(html, 'text/html');
+
+       const footer = footerPage.querySelector('.footer');
+       if(footer){
+            document.getElementById('page-footer').innerHTML = footer.outerHTML;
+        
+       }
+       else{
+        console.warn('No <footer> found in footer.html');
+       }
+
+       
+    })
+    .catch(function (error){
+    console.warn('Could not find your file mamasita', error)
+});
+}
+
+window.addEventListener('DOMContentLoaded', GetFooter);
+
+
+//fetch navbar and inject it to every html page
 function GetNavBar(){
 fetch('../components/navbar.html')
 .then(response => {
@@ -59,54 +88,62 @@ window.addEventListener('DOMContentLoaded', GetNavBar);
 
 
 
-
-
-
 //typewriter
-const titles = ["AN XR DEVELOPER." ,"A FRONT-END DEVELOPER.","A GAME DEVELOPER", "A SOFTWARE DEVELOPER"];
+const titles = ["AN XR DEVELOPER.",
+    "A FRONT-END DEVELOPER.",
+    "A GAME DEVELOPER",
+    "A SOFTWARE DEVELOPER"];
 
 let i = 0;
+let charIndex = 0;
+let isDeleting = false;
+let delay = 100;
 let counter;
 
 
-function typing(){
-    let title = titles[i].split("");
-    let loopType = function(){
-        if(title.length > 0){
-            document.getElementById('typewriter').innerHTML += title.shift();
-        }
-        else{
-            deleteTitle();
-            return false;
-        };
-        counter = setTimeout(loopType, 200);
-    };
-    loopType();
-};
+function typewriter(){
 
-function deleteTitle(){
-    let title = titles[i].split("");
-    let loopDelete = function(){
-       if(title.length > 0){
-        title.pop();
-        document.getElementById('typewriter').innerHTML = title.join("");
-       }
-       else{
-           if(titles.length > (i+ 1)){
-               i++;
-           }
-           else{
-               i = 0;
-           };
-           typing();
-        return false;
-       };
-       counter = setTimeout(loopDelete, 200);
-   };
-   loopDelete();
-};
+    let currentTitle = titles[i];
+    
+    const display = document.getElementById("typewriter");
 
-typing();
+
+    if(!display) return;
+
+    //decide which text to display
+    if(isDeleting){
+        charIndex--;
+        delay = 60;
+    }
+    else{
+        charIndex++;
+        delay = 120;
+    }
+
+    display.innerHTML = currentTitle.substring(0, charIndex);
+
+    //pause before deleting current text
+    if(!isDeleting && charIndex === currentTitle.length){
+
+        display.classList.add("blinking-caret");
+        delay = 1200;
+        isDeleting = true;
+    }
+    else{
+        display.classList.remove("blinking-caret");
+    }
+
+    //print the next title
+    if(isDeleting && charIndex == 0){
+        isDeleting = false;
+        i = (i + 1) % titles.length;
+        delay = 300;
+    }
+
+    setTimeout(typewriter, delay);
+}
+
+typewriter();
 
    
     

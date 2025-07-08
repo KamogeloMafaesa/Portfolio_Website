@@ -8,38 +8,103 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
+:root{
+  --typewriter: #ff3c3c;
+  --primary-color: #ffffff;
+  --bg-color: #000000;
+  --main-font: 'Poppins', sans-serif;
+  --primary-font:'Lato', sans-serif;
+}
 html{
   font-size: 62.5%;
 }
 
 body{
-  background: black;
-  font-family: 'Lato', sans-serif;
-  color: white;
-  font-size: 25px;
-  --typewriter:red;
+  background: var(--bg-color);
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  /*font-size: 25px;*/
+  
 
+
+}
+.homePage{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
 }
 h1, h2{
-  font-family: 'Poppins', sans-serif;
+  font-family:var(--main-font);
 
 }
-/*First Page Styles*/
+/*Home Page Styles*/
+.hero{
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 0 5%;
+  gap: 2rem;
+
+}
+
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.2rem;
+  min-width: 300px;
+}
+
+.hero-image{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-width: 300px;
+  padding: 0;
+
+
+
+}
+
+.hero-image img{
+
+  width: 90%;
+  max-width: 500px;
+  align-self: center;
+  height: auto;
+  padding: 0;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  object-fit: cover;
+
+}
+/*
 .row{
   display:flex;
   width: 100%;
   height: 88vh;
   
   
-}
+}/*
+
 .column{
-  float: left;
+  flex: 1;
   
   
   
 }
 .left{
-  width:60%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+  font-family: 'Poppins', sans-serif; 
   
 
   
@@ -50,38 +115,54 @@ h1, h2{
   
 }
 .left h1{
-  font-family: 'Poppins', sans-serif;
+
   font-weight: 400;
   font-size: 8rem;
+  letter-spacing: 0.1em;
   margin-top: 20rem;
-  margin-left:30rem;
+
   
  
-}
+}*/
 #Hello h1{
   color: black;
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width:.1rem;
+  font-size: 7rem;
+  font-weight: 200;
+  letter-spacing: 0.15em;
+  -webkit-text-stroke: 1px white;
+
+
+  /*adding subtle animation*/
+  opacity: 0;
+  transform: translateX(30px);
+  animation: fadeIn 1s forwards 0.5s;
  
   
 }
-.left .intro{
-  font-family: 'Poppins', sans-serif;
-  font-size: 5rem;
+/*.left*/ .intro{
+  font-size: 3.5rem;
   margin-top:.5rem;
-  margin-left: 20rem;
-}
-#typewriter{
-  font-family: 'Poppins', sans-serif;
-  font-size: 4rem;
-  margin-top: 3rem;
-  margin-left: 25rem;
-  color: var(--typewriter);
-  
-  
-  
+  font-weight: 700;
+  letter-spacing: 0.15em;
+
+
+  /*adding subtle animation*/
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: fadeIn 1s forwards 1s;
+ 
+
 }
 
+/*adding subtle animation for text*/
+@keyframes fadeIn{
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*
 #homeImg img{
   width: 80%;
   height:80%;
@@ -92,40 +173,92 @@ h1, h2{
   margin-left: auto;
   
  
-}
-
-#intro h1{
-  font-size: 50px;
-}
+}*/
 #typewriter{
-  
-  width: auto;
+  font-weight: 500;
+  font-size: 3rem;
+  color: var(--typewriter);
+  width: 0;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  letter-spacing: .15em;
-  border-right: .15em solid white;
-  animation: typing 4.5s steps(40,end),
-            caret .80s step-end infinite;
+  letter-spacing: 0.15em;
+  border-right: 0.15em solid transparent;
+  animation: typing 3s steps(20, end) forwards;
+  
+}
+.blinking-caret{
+  animation: blink 0.75s step-end infinite;
+  border-right: 0.15em solid var(--typewriter);
+}
+
+/*adding animation for typewriter blink*/
+
+@keyframes typing {
+  from{ width: 0;}
+  to{ width: 100%;}
   
 }
 
+@keyframes blink{
 
-@keyframes typing{
-  from{max-width: 0}
-  to{max-width: 100%}
-}
-@keyframes caret{
-  from,to{border-color: transparent;}
-  50%{border-color: var(--typewriter);}
+  50%{
+    border-color: transparent;
+  }
 } 
 
+.fade-up{
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.5s;
+}
 
+@keyframes fadeInUp {
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
 
+.fade-in{
+  opacity: 0;
+  transform: translateX(20px);
+  animation: fadeInRight 0.8s ease-out forwards;
+  animation-delay: 0.8;
+}
 
+@keyframes fadeInRight {
+  to{
+    opacity: 0;
+  }
+  
+}
+.fa-brands,
+.fa-solid{
+  color: white;
+}
+@media (max-width: 768px){
+  .hero{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+  .hero-text{
+    justify-content: center;
+    align-items: center;
 
+  }
+  .hero-image{
+    margin-top: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
 
+  }
 
+}
 
 
 

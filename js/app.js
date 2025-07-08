@@ -15,7 +15,7 @@ function GetFooter(){
         
        }
        else{
-        console.warn('No <footer> found in footer.html');
+        console.warn(' bathong <footer> e kae?');
        }
 
        

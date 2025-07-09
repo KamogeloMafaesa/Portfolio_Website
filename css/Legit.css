@@ -116,19 +116,30 @@ body{
 }
 
 .introduction{
-    width: 100%;
-    height: 60vh;
-    padding-bottom: 40px;
+    width: 100vw;
+    height: 100vh;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
     
 }
-.intro{
-    
-    height: 140vh;
-    
+
+.intro-title{
+    width: 40%;
+    text-align: start;
+    padding-left: 10px auto;
+
 }
-.introduction .left, .introduction .right{
+ .intro-text{
     width: 50%;
-}
+    line-height: 1.5em;
+ }
+
+
 .tools{
     width: 100%;
     height: 80vh;

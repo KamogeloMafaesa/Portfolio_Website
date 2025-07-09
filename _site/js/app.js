@@ -1,4 +1,4 @@
-    //setting path for components folder
+/*     //setting path for components folder
     const basePath = window.location.hostname.includes("github.io") 
     ? './Portfolio_Website/_includes/' 
     : '.../_includes/';
@@ -64,7 +64,24 @@ fetch(`${basePath}navbar.html`)
     }
  
 
-    //adding event listeners for hamburger menu when screen is smaller
+
+
+
+})
+.catch(function (error){
+    console.warn('Could not find your file mamasita', error)
+}); 
+ 
+} 
+
+
+//adding event listener to call Get NavBar page on load
+window.addEventListener('DOMContentLoaded', GetNavBar);
+*/
+
+
+
+//adding event listeners for hamburger menu when screen is smaller
 
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
@@ -91,21 +108,6 @@ hamburger.addEventListener("touchstart", ()=>{
           
     });
 });
-
-
-})
-.catch(function (error){
-    console.warn('Could not find your file mamasita', error)
-});
- 
-}
-//adding event listener to call Get NavBar page on load
-window.addEventListener('DOMContentLoaded', GetNavBar);
-
-
-
-
-
 
 
 //typewriter

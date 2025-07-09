@@ -46,7 +46,7 @@ h1, h2{
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  height: 80vh;
+  height: 78vh;
   padding: 0 5%;
   gap: 2rem;
 
@@ -278,6 +278,7 @@ h1, h2{
 
 
 }
+
 .aboutTitle{
   
   border-bottom: 1px solid white;
@@ -286,6 +287,7 @@ h1, h2{
   margin-right: auto;*/
 
   text-align: center;
+  justify-self: center;
   align-self: center;
   padding: 0 10px;
   font-size: 60px;
@@ -319,7 +321,7 @@ h1, h2{
   margin-bottom: 1.2rem;
   font-size: 1.1rem;
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
   font-size: 1.8em;
   /*background: red;*/
   text-align: center;

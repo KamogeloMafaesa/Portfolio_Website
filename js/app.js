@@ -1,9 +1,13 @@
-//fetch footer and inject it to every page
+    //setting path for components folder
+    const basePath = window.location.hostname.includes("github.io") 
+    ? './Portfolio_Website/_includes/' 
+    : '.../_includes/';
+
+
+    //fetch footer and inject it to every page
 function GetFooter(){
    // fetch('./Portfolio_Website/components/footer.html')
-    const basePath = window.location.hostname.includes("github.io") 
-    ? './Portfolio_Website/components/' 
-    : '../components/';
+
 
     fetch(`${basePath}footer.html`)
 
@@ -39,10 +43,6 @@ window.addEventListener('DOMContentLoaded', GetFooter);
 //fetch navbar and inject it to every html page
 function GetNavBar(){
 //fetch('./Portfolio_Website/components/navbar.html')
-    const basePath = window.location.hostname.includes("github.io") 
-    ? './Portfolio_Website/components/' 
-    : '../components/';
-
 fetch(`${basePath}navbar.html`)
 .then(response => {
     return response.text()

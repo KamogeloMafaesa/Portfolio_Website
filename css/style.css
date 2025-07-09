@@ -46,7 +46,7 @@ h1, h2{
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  height: 100vh;
+  height: 80vh;
   padding: 0 5%;
   gap: 2rem;
 
@@ -274,7 +274,7 @@ h1, h2{
   gap: 4rem;
   color: var(--primary-color);
   text-align: center;
-  height: 100vh;
+  font-size: 1.2rem;
 
 
 }

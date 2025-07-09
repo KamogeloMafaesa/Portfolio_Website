@@ -27,3 +27,29 @@ a{
  
 }
 
+a i{
+
+transition: all 0.3s linear;
+
+}
+
+a:hover i{
+    transform: scale(1.5);
+}
+
+.fa-linkedin:hover{
+    color: rgb(46, 108, 255);
+}
+.fa-envelope:hover{
+    color: white;
+    -webkit-text-stroke-color: rgb(171, 6, 6);
+    -webkit-text-stroke-width: 2px;
+
+}
+.fa-facebook:hover{
+    color: rgb(38, 0, 255);
+}
+.fa-instagram:hover{
+    color: rgb(254, 31, 86);
+}
+

@@ -269,8 +269,7 @@ h1, h2{
   display: flex;
   flex-direction: column;
   max-width: 100vw;
-  margin: 1rem auto;
-  padding: 2rem;
+  padding: 0 auto;
   gap: 4rem;
   color: var(--primary-color);
   text-align: center;
@@ -278,7 +277,7 @@ h1, h2{
 
 
 }
-.aboutTitle, .contactTitle{
+.aboutTitle{
   
   border-bottom: 1px solid white;
   width: 85%;
@@ -301,6 +300,7 @@ h1, h2{
   align-items: center;
   text-align: center;
   object-fit: cover;
+  padding: 0 auto;
   /*background: rgb(255, 119, 0);*/
 
 }
@@ -319,7 +319,7 @@ h1, h2{
   margin-bottom: 1.2rem;
   font-size: 1.1rem;
   margin: 0 auto;
-  width: 50%;
+  width: 65%;
   font-size: 1.8em;
   /*background: red;*/
   text-align: center;
@@ -355,9 +355,6 @@ h1, h2{
  /* padding-top: 25px;*/
   
 }
-.info{
-  padding: 30px;
-}
 
 .info p{
   padding-top:20px;
@@ -374,15 +371,11 @@ h1, h2{
  /*contact Page*/
 
  .contactPage{
-   width: 100vw;
-   height: 80vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+   width: 100%;
+   height: 100%;
+ 
   
  }
-
  .contact-message{
    margin-top: 100px;
  }

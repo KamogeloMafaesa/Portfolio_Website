@@ -1,6 +1,12 @@
 //fetch footer and inject it to every page
 function GetFooter(){
-    fetch('../components/footer.html')
+   // fetch('./Portfolio_Website/components/footer.html')
+    const basePath = window.location.hostname.includes("github.io") 
+    ? './Portfolio_Website/components/' 
+    : '../components/';
+
+    fetch(`${basePath}footer.html`)
+
     .then(response => {
         return response.text();
     })
@@ -20,8 +26,10 @@ function GetFooter(){
 
        
     })
+
+    //Will console a warning if the folder is not
     .catch(function (error){
-    console.warn('Could not find your file mamasita', error)
+    console.warn('Could not find your footer.html file mamasita', error)
 });
 }
 
@@ -30,7 +38,12 @@ window.addEventListener('DOMContentLoaded', GetFooter);
 
 //fetch navbar and inject it to every html page
 function GetNavBar(){
-fetch('../components/navbar.html')
+//fetch('./Portfolio_Website/components/navbar.html')
+    const basePath = window.location.hostname.includes("github.io") 
+    ? './Portfolio_Website/components/' 
+    : '../components/';
+
+fetch(`${basePath}navbar.html`)
 .then(response => {
     return response.text()
 })
@@ -42,7 +55,14 @@ fetch('../components/navbar.html')
 
     var navigationBar = navPage.querySelector('nav');
     //injecting navbar into page
-    document.getElementById('navibar').innerHTML = navigationBar.outerHTML;
+    if (navigationBar){
+
+   document.getElementById('navibar').innerHTML = navigationBar.outerHTML;
+    }
+    else{
+        console.warn('could not find the navigation bar miss');
+    }
+ 
 
     //adding event listeners for hamburger menu when screen is smaller
 

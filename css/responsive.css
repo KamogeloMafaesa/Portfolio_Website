@@ -129,7 +129,21 @@
       z-index: -2;
       
     }
-    .about p{
+    .about-me{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    #aboutContent{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0;
+    }
+    .about-me-text{
+      text-overflow: inherit;
+    }
+    .about p, .about-me-text p{
       font-size: 1.6rem;
     }
     .aboutTitle{

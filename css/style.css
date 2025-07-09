@@ -264,33 +264,64 @@ h1, h2{
 
 
 /*About Page Styles*/
-.about{
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
+.about-me{
 
-
-}
-#aboutContent{
   display: flex;
-  
+  flex-direction: column;
+  max-width: 80vw;
+  margin: 1rem auto;
+  padding: 2rem;
+  gap: 4rem;
+  color: var(--primary-color);
+  text-align: center;
+
 }
 .aboutTitle{
   
   border-bottom: 1px solid white;
   width: 85%;
-  margin-left: auto;
-  margin-right: auto;
+ /* margin-left: auto;
+  margin-right: auto;*/
+
   text-align: center;
   padding: 50px;
   font-size: 60px;
-  color: black;
-  -webkit-text-stroke-color: white;
+  color: var(--bg-color);
+  -webkit-text-stroke-color: var(--primary-color);
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
 }
+
+#aboutContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: center;
+
+  background: rgb(255, 119, 0);
+}
+
+#aboutContent img{
+  max-width: 400px;
+  padding: 10px 20px;
+  flex: 1;
+
+}
+
+.about-me-text {
+
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  width: 70%;
+  font-size: 1.8em;
+  background: red;
+  flex: 1;
+  text-align: center;
+
+}
+
 
 /* .aboutTitle{
   
@@ -705,4 +736,7 @@ h1, h2{
   margin-right: auto;
   margin-bottom: 10rem;
   
+ }
+ .footer{
+  color: white;
  }

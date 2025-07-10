@@ -46,7 +46,7 @@ h1, h2{
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  height: 78vh;
+  height: 79vh;
   padding: 0 5%;
   gap: 2rem;
 
@@ -84,46 +84,7 @@ h1, h2{
   object-fit: cover;
 
 }
-/*
-.row{
-  display:flex;
-  width: 100%;
-  height: 88vh;
-  
-  
-}/*
 
-.column{
-  flex: 1;
-  
-  
-  
-}
-.left{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 5%;
-  font-family: 'Poppins', sans-serif; 
-  
-
-  
-}
-.right{
-  width: 40%;
-  
-  
-}
-.left h1{
-
-  font-weight: 400;
-  font-size: 8rem;
-  letter-spacing: 0.1em;
-  margin-top: 20rem;
-
-  
- 
-}*/
 #Hello h1{
   color: black;
   font-size: 7rem;
@@ -575,13 +536,7 @@ h1, h2{
   background-repeat: no-repeat;
   background-size: 100% 80%;
 }
-#InteractiveMedia{
-  
-  background-image: url(../Images/InteractiveMedia.png);
-  background-repeat: no-repeat;
-  background-size: 100% 80%;
-  
-}
+
 #cssAnimations{
   
   background-image: url(../Images/CSS\ animations\ .png);
@@ -679,43 +634,80 @@ h1, h2{
   background-repeat: no-repeat;
 }
 
+/*web dev projects page*/
+#InteractiveMedia{
+  
+  background-image: url(../Images/InteractiveMedia.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
 #VansSneaker{
   background-image: url(../Images/Vans_Sneaker_A.png);
   background-repeat: no-repeat;
-  background-size: 100% 80%;
+  background-size: cover;
 }
 #NikeSneaker{
   background-image: url(../Images/Nike_Anim.png);
   background-repeat: no-repeat;
-  background-size: 100% 70%;
+  background-size: cover;
 }
 
 #BtnAnim{
   background-image: url(../Images/Button\ Animation\ .png);
   background-repeat: no-repeat;
-  background-size: 100% 70%;
+  background-size: cover;
 }
 #Menu-Ani{
   background-image: url(../Images/Menu\ Animation\ -\ Google\ Chrome\ 2023-06-28\ 05-55-21.gif);
   background-repeat: no-repeat;
-  background-size: 100% 70%;
+  background-size: cover;
 }
 #MouseFollow{
 
   background-image: url(../Images/Mouse-Follow-Google-Chrome-2023.gif);
   background-repeat: no-repeat;
-  background-size: 100% 70%;
+  background-size: cover;
 
 }
 #MouseTrail{
   background-image: url(../Images/MouseTrail-Google-Chrome-2023-06.gif);
   background-repeat: no-repeat;
-  background-size: 100% 70%;
+  background-size: cover;
+}
+
+#glass-form{
+  background-image: url(../Images/GlassForm-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 .webDesign, .CSS{
-  margin: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: unset;
+}
+.youtube{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.youtube iframe{
+
+  margin: 10rem 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 8px 20px rgba(255, 255, 255, 0.2);
+  
+
 }
 .webDesign p{
   font-weight: bolder;
@@ -729,20 +721,37 @@ h1, h2{
   filter: brightness(100%);
 }
 
+/*web dev project page styles*/
+.web-dev-projects{
+  width: 80%;
+}
+.Project-card{
+  width: 80%;
+  height:100vh;
+  margin: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Project-card a, .Project-card iframe{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-shadow: 2px 8px 20px rgba(255, 255, 255, 0.2);
+}
+.Project-card h2{
+  padding: 10px 0;
+
+}
+
 #DevEdWeb p,
  #VansSneaker p{
 
   margin-bottom: 15rem;
  }
 
- .youtube iframe{
-
-  width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10rem;
-  
- }
  .footer{
   color: white;
  }

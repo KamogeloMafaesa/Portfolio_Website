@@ -638,11 +638,11 @@ h1, h2{
 /*web dev projects page*/
 #InteractiveMedia{
   
-  background-image: url(../Images/InteractiveMedia.png);
+  background-image: url(../Images/interactiveMedia.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: red;
 
-  
 }
 #VansSneaker{
   background-image: url(../Images/Vans_Sneaker_A.png);

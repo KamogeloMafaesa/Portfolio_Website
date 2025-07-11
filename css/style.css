@@ -755,17 +755,17 @@ h1, h2{
 }
 .CSS a, .CSS img, .CSS div{
   width: 80vw;
-  height: unset;
+
  
 }
 .CSS a{
   text-decoration: none;
 }
 .cssdrawing{
+  height: 100vh;
   margin: 6rem 4rem;
   display: flex;
   flex-direction: column;
-  align-self: center !important;
   justify-content: center;
   align-items: center;
 

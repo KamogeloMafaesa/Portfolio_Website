@@ -514,19 +514,7 @@ h1, h2{
 }
 
 
-#stewie{
-  
-  background-image: url(../Images/stewie.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-#sunset{
-  
-  background-image: url(../Images/sunset.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 #ryan{
   /*height: 150vh;*/
   background-image: url(../Images/ryan.png);
@@ -775,7 +763,11 @@ h1, h2{
 }
 .cssdrawing{
   margin: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
   align-self: center !important;
+  justify-content: center;
+  align-items: center;
 
 }
 #DevEdWeb p,

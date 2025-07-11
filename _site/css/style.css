@@ -435,24 +435,34 @@ h1, h2{
   
 }
 #illustrations{
+  width: 100vw;
+  height: 80vh;
   filter: grayscale(100%);
   background-image: url(../Images/illustrations\ group.png);
   margin-bottom: 100px;
 }
 #cssdrawings{
+  width: 100vw;
+  height: 80vh;
   filter: grayscale(100%);
   background-image: url(../Images/drawings.png);
 }
 #designprojects{
+  width: 100vw;
+  height: 80vh;
   filter: grayscale();
   background-image: url(../Images/Design.png);
   
 }
 #blender_banner{
+  width: 100vw;
+  height: 80vh;
   filter: grayscale(100%);
   background-image: url(../Images/blender_banner.png);
 }
 #games_banner{
+  width: 100vw;
+  height: 80vh;
   filter: grayscale(100%);
   background-image: url(../Images/game_banner.png);
 }
@@ -543,8 +553,8 @@ h1, h2{
   background-size: 50% 80%;
 }
 .caseStudy{
-  width: 100%;
-  height: 90vh;
+  width: 100vw;
+  height: 80vh;
   background: red;
   border: 1px solid white;
   margin-bottom: 100px;
@@ -559,14 +569,14 @@ h1, h2{
 #legitCaseStudy{
   background-image: url(../Images/LegitRedesign_Iteration2\ -\ Figma\ 2021_09_06\ 12_21_29\ \(2\).png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   filter: grayscale(100%);
 }
 
 #legitCaseStudy:hover{
   background-image: url(../Images/LegitRedesign_Iteration2\ -\ Figma\ 2021_09_06\ 12_21_29\ \(2\).png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   filter: none;
   transition: 0.75s all ease-in;
 }

@@ -47,7 +47,6 @@ nav{
 .nav-links li a, .legit-nav-links a{
   color: #FFF;
   text-decoration: none;
-  /* border: 2px solid rgb(216, 2, 134); */
   border-radius: 0px;
   padding: 18px 30px;
   display: inline-block;

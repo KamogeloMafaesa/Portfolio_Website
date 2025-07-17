@@ -23,10 +23,16 @@ body{
   background: var(--bg-color);
   font-family: var(--primary-font);
   color: var(--primary-color);
+  font-size: 1.2rem;
   /*font-size: 25px;*/
   
-
-
+}
+body p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+body h1{
+  font-size: 3.5rem;
 }
 .homePage{
   margin: 0;
@@ -123,18 +129,6 @@ h1, h2{
   }
 }
 
-/*
-#homeImg img{
-  width: 80%;
-  height:80%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-top: 13.2rem;
-  margin-left: auto;
-  
- 
-}*/
 #typewriter{
   font-weight: 500;
   font-size: 3rem;
@@ -206,7 +200,7 @@ h1, h2{
     font-size: 1.4rem !important;
   }
   body h2{
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
   }
   body h1{
     font-size: 2.8rem !important;
@@ -222,6 +216,9 @@ h1, h2{
     justify-content: center;
     align-items: center;
 
+  }
+  #Hello h1{
+    font-size: 5rem !important;
   }
   .hero-image{
     margin-top: 2rem;
@@ -270,7 +267,6 @@ h1, h2{
   gap: 4rem;
   color: var(--primary-color);
   text-align: center;
-  font-size: 1.2rem;
 
 
 }
@@ -316,10 +312,8 @@ h1, h2{
 
   line-height: 1.6;
   margin-bottom: 1.2rem;
-  font-size: 1.1rem;
   margin: 0 auto;
   width: 60%;
-  font-size: 1.8em;
   /*background: red;*/
   text-align: center;
 
@@ -369,6 +363,35 @@ h1, h2{
    height:100%; 
  }
 
+/*Logo Case Study Page*/
+    .logo-landing{
+      width: 100vw;
+      height: unset;
+      padding: 20px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-bottom: 1px solid white;
+      gap: 5rem;
+    }
+    .logo-landing section{
+      height: 100vh;
+    }
+    .logo-landing img{
+       width: 500px;
+       height: 600px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .logo-landing p{
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      padding: 50px 50px;
+    }
 
  /*contact Page*/
 
@@ -467,6 +490,7 @@ h1, h2{
   text-decoration: none;
   color: white;
   font-size: 4vw;
+  text-align: center;
   filter: drop-shadow(1px 1px 15px black);
   
 }
@@ -658,7 +682,7 @@ h1, h2{
  
 }
 #ryanOutline{
-  background-image: url(../Images/Ryan\ Destiny\ -\ Google\ Chrome\ 2021_10_26\ 21_17_35.png);
+  background-image: url(../Images/Ryan_blue-outline.png);
   background-size: cover;
 }
 #triangle{
@@ -670,7 +694,11 @@ h1, h2{
   background-size: (100% 100%);
   background-repeat: no-repeat;
 }
-
+/*css case study*/
+.css-case-study img{
+  width: 700px;
+  
+}
 /*web dev projects page*/
 #InteractiveMedia{
   
@@ -788,16 +816,18 @@ h1, h2{
   box-shadow: 2px 8px 20px rgba(255, 255, 255, 0.2);
 }
 .Project-card h2, .CSS h2{
-  padding: 10px 0;
+  padding: 10px 10px;
 
 }
 .CSS{
   width: 100vw;
+  height: unset;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 4rem;
 }
 .CSS a, .CSS img, .CSS div{
   width: 80vw;
@@ -808,8 +838,9 @@ h1, h2{
   text-decoration: none;
 }
 .cssdrawing{
-  height: 100vh;
-  margin: 6rem 4rem;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

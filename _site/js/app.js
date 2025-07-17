@@ -31,8 +31,8 @@ hamburger.addEventListener("touchstart", ()=>{
 //typewriter
 const titles = ["AN XR DEVELOPER.",
     "A FRONT-END DEVELOPER.",
-    "A GAME DEVELOPER",
-    "A SOFTWARE DEVELOPER"];
+    "A GAME DEVELOPER.",
+    "A SOFTWARE DEVELOPER."];
 
 let i = 0;
 let charIndex = 0;

@@ -201,6 +201,17 @@ h1, h2{
   color: white;
 }
 @media (max-width: 768px){
+
+  body p{
+    font-size: 1.4rem !important;
+  }
+  body h2{
+    font-size: 2.5rem;
+  }
+  body h1{
+    font-size: 2.8rem !important;
+  }
+
   .hero{
     flex-direction: column;
     align-items: center;
@@ -218,6 +229,30 @@ h1, h2{
     align-items: flex-start;
 
   }
+
+  .about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+  }
+  #aboutContent{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+.about-me-text{
+  width: 100% !important;
+}
+  
 
 }
 
@@ -273,6 +308,7 @@ h1, h2{
   padding: 10px 20px;
   border-radius: 50%;
   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  flex-shrink: 1;
 
 }
 

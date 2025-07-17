@@ -36,7 +36,7 @@ nav{
   background-position: 100%;
   transition: background-position .5s ease;
 } */
-.nav-links li a:hover, .addresses a:hover{
+.nav-links li a:hover, .addresses a:hover, .legit-nav-links a:hover{
  
   transition: 2s ease-out;
   transform: scaleX(100%);
@@ -44,7 +44,7 @@ nav{
   box-shadow: inset 400px 0 0 0 var(--accentColor);
   
 }
-.nav-links li a{
+.nav-links li a, .legit-nav-links a{
   color: #FFF;
   text-decoration: none;
   /* border: 2px solid rgb(216, 2, 134); */
@@ -59,4 +59,17 @@ nav{
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 
+}
+
+@media(max-width: 768px){
+
+  .nav-links li{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+  .nav-links li a{
+
+  }
 }

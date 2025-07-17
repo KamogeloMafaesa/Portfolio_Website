@@ -28,14 +28,7 @@ nav{
   margin-left: auto;
   list-style: none;
 }
-/* .nav-links li a{
-  text-decoration: none;
-  color:white;
-  font-size: 2.5rem;
-  
-  background-position: 100%;
-  transition: background-position .5s ease;
-} */
+
 .nav-links li a:hover, .addresses a:hover, .legit-nav-links a:hover{
  
   transition: 2s ease-out;
@@ -68,7 +61,5 @@ nav{
     padding: 0;
     gap: 0;
   }
-  .nav-links li a{
 
-  }
 }

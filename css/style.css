@@ -599,12 +599,26 @@ h1, h2{
 }
 
 #cssAnimations{
-  
-  background-image: url(../Images/CSS\ animations\ .png);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  box-shadow: none !important;
+  background-color: red;
+    background-image: url(../Images/CSS-animations.png);
   background-repeat: no-repeat;
-  background-size: 100% 80%;
+  background-size: 100% 100%;
+}
+.anim{
+  
+
+
   
 }
+
 
 #graphicDesign{
   background-image: url(../Images/self-portrait-1.png);
@@ -700,14 +714,7 @@ h1, h2{
   
 }
 /*web dev projects page*/
-#InteractiveMedia{
-  
-  background-image: url(../Images/interactiveMedia.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: red;
 
-}
 #VansSneaker{
   background-image: url(../Images/Vans_Sneaker_A.png);
   background-repeat: no-repeat;
@@ -812,12 +819,27 @@ h1, h2{
 .Project-card a, .Project-card iframe, .CSS a{
   width: 100%;
   height: 100%;
+  align-self: center;
   margin: 0;
   box-shadow: 2px 8px 20px rgba(255, 255, 255, 0.2);
 }
-.Project-card h2, .CSS h2{
+.Project-card h1, .CSS h2{
+  text-align: center;
   padding: 10px 10px;
 
+}
+.react-web{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background:red;
+  background-image: url(../Images/React_web-image.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.react-web a{
+  box-shadow: none !important;
 }
 .CSS{
   width: 100vw;

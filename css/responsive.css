@@ -181,10 +181,13 @@
 
 
    }
-   .webDesign .Project-card a{
+   .webDesign .Project-card a, #cssAnimations{
     width: 100%;
     height: 50vh;
    }
+  #cssAnimations h1{
+    justify-self: center;
+  }
 
     .logo-landing{
       width: 100vw;

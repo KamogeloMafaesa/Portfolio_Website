@@ -24,6 +24,7 @@ body{
   font-family: var(--primary-font);
   color: var(--primary-color);
   font-size: 1.2rem;
+  overflow-x: hidden !important;
   /*font-size: 25px;*/
   
 }
@@ -611,12 +612,6 @@ h1, h2{
     background-image: url(../Images/CSS-animations.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
-.anim{
-  
-
-
-  
 }
 
 
